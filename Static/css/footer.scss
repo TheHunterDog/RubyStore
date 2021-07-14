@@ -1,0 +1,15 @@
+footer{
+  max-height: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: $secundary-color;
+  padding: 20px 15px;
+  ul{
+    list-style: none;
+    li:nth-child(even){margin: 5px 0 0 0 ;}
+  }
+  div{
+    justify-self: center;
+    align-self: center;
+  }
+}

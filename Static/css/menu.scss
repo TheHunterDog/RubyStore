@@ -1,15 +1,18 @@
 header{
+  padding: 15px;
   display: flex;
   flex-direction: row;
 justify-content: space-between;
 align-items: center;
   .logo{
     color: $main-color;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
   }
   .menuAndLogo,.personalmenu{
     display: flex;
     flex-direction: row;
-    margin: 0 15px;
+    // margin: 0 15px;
 
   }
   .personalmenu{
@@ -27,13 +30,37 @@ align-items: center;
     }
     li{
       margin: 0 5px 0 0;
-      padding: 0 10px;
+      // padding: 0 10px;
     }
     ul{
       display: none;
+      position: absolute;
       list-style: none;
+      background-color: $secundary-color;
+      border-radius: 5px;
+      padding: 10px;
+      li{
+        height: 30px;
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+      }
+
+      li:nth-child(even){
+        // padding: 5px 0 ;
+
+      }
+    }
+    .drop:hover{
+      ul{
+        display: block;
+      }
+      li:hover{
+        border-bottom: 1px solid #000000;
+      }
     }
   }
+
   .search{
     display: flex;
     flex-direction: row;
@@ -42,6 +69,7 @@ align-items: center;
     min-width: 0;
     width: 18%;
     flex-grow: 1;
+    max-width: 500px;
     // max-height: 30px;
    img{
     //  border-left: 1px solid #000;
